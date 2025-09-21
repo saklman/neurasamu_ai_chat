@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta tag for SEO and authorship -->
+    <meta name="author" content="Muhammad Salman">
+    <title>NeuraSaMu | A project by Muhammad Salman</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1A202C; /* Dark text for better contrast on a light background */
+            background-color: #FCE7F3; /* Light pink background */
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #A855F7, #EC4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .btn-gradient {
+            background: linear-gradient(90deg, #EC4899, #A855F7);
+        }
+        .card {
+            background-color: #F9A8D4; /* A slightly darker pink for cards */
+        }
+        .scrollable-list {
+            max-height: 600px;
+            overflow-y: auto;
+            -ms-overflow-style: none; /* for Internet Explorer, Edge */
+            scrollbar-width: none; /* for Firefox */
+        }
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .scrollable-list::-webkit-scrollbar {
+            display: none;
+        }
+        .modal {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="py-6 px-4 md:px-12">
+        <nav class="flex justify-between items-center">
+            <div class="text-2xl font-bold gradigradientent-text">NeuraSaMu</div>
+            <a href="#" id="contact-link" class="text-sm font-semibold text-gray-700 hover:text-black transition-colors duration-200">Contact Us</a>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 md:px-12 py-16">
+
+        <!-- Hero Section -->
+        <section class="text-center mb-20">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight tracking-tighter mb-4">
+                <span class="gradient-text">Communicate</span> like never before.
+            </h1>
+            <p class="text-lg md:text-xl text-gray-700 max-w-2xl mx-auto mb-8">
+                NeuraSaMu is an application that will completely change your messaging and calling experience with AI-powered features and next-level privacy.
+            </p>
+            <button id="download-btn" class="btn-gradient text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                Download Now
+            </button>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="mb-20">
+            <h2 class="text-center text-3xl md:text-4xl font-bold mb-8">Key Features</h2>
+            <div class="scrollable-list space-y-8">
+                <!-- Agents & Groups -->
+                <div class="card p-6 rounded-3xl shadow-lg border border-pink-400">
+                    <div class="text-4xl mb-4">🤖</div>
+                    <h3 class="text-xl font-bold mb-2">Agents & Groups</h3>
+                    <p class="text-gray-700">Our AI agents can be your friend, business partner, or teacher. Use them in groups of up to 5 friends for real-time information, calculations, coding help, and even to correct mistakes.</p>
+                </div>
+                <!-- Smart Reminders & Notifications -->
+                <div class="card p-6 rounded-3xl shadow-lg border border-pink-400">
+                    <div class="text-4xl mb-4">⏰</div>
+                    <h3 class="text-xl font-bold mb-2">Smart Reminders & Notifications</h3>
+                    <p class="text-gray-700">Forget boring alarms. Our AI will call you with a motivational message to help you succeed. Set reminders for your tasks, and the AI will call to keep you on track.</p>
+                </div>
+                <!-- Unified Calling System -->
+                <div class="card p-6 rounded-3xl shadow-lg border border-pink-400">
+                    <div class="text-4xl mb-4">📞</div>
+                    <h3 class="text-xl font-bold mb-2">Unified Calling System</h3>
+                    <p class="text-gray-700">Make both local (SIM) and online calls from a single chat screen. The app also shows your complete call history for direct, easy access.</p>
+                </div>
+                <!-- Advanced Messaging -->
+                <div class="card p-6 rounded-3xl shadow-lg border border-pink-400">
+                    <div class="text-4xl mb-4">💬</div>
+                    <h3 class="text-xl font-bold mb-2">Advanced Messaging</h3>
+                    <p class="text-gray-700">Experience seamless online and offline messaging. Share high-quality photos and videos without any compression, so every moment is captured in its true glory.</p>
+                </div>
+                <!-- AI Enhanced Communication -->
+                <div class="card p-6 rounded-3xl shadow-lg border border-pink-400">
+                    <div class="text-4xl mb-4">✨</div>
+                    <h3 class="text-xl font-bold mb-2">AI Enhanced Communication</h3>
+                    <p class="text-gray-700">AI noise reduction, loudness control, and high-quality video calls. AI framing ensures you are always in the perfect frame.</p>
+                </div>
+                <!-- Next-Level Privacy -->
+                <div class="card p-6 rounded-3xl shadow-lg border border-pink-400">
+                    <div class="text-4xl mb-4">🔒</div>
+                    <h3 class="text-xl font-bold mb-2">Next-Level Privacy</h3>
+                    <p class="text-gray-700">Two types of storage: Secure internal storage for business users and cloud storage for regular users. Your chats and media will always be secure.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="text-center bg-pink-300 p-10 rounded-3xl shadow-inner">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to step into the future?</h2>
+            <p class="text-lg text-gray-700 max-w-xl mx-auto mb-6">NeuraSaMu is designed for businesses and students to get the best communication experience.</p>
+            <button id="download-btn-2" class="btn-gradient text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                Download Now
+            </button>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 text-gray-600 text-sm">
+        <p>&copy; 2025 NeuraSaMu. All rights reserved.</p>
+    </footer>
+
+    <!-- Wishlist Modal -->
+    <div id="wishlist-modal" class="modal fixed inset-0 flex items-center justify-center p-4 hidden">
+        <div class="bg-white p-8 rounded-xl shadow-2xl max-w-sm w-full border border-gray-300 text-center">
+            <h3 class="text-2xl font-bold gradient-text mb-4">Added to Wishlist!</h3>
+            <p class="text-gray-700 mb-6">This feature is coming soon. We'll notify you when it's available.</p>
+            <button id="close-wishlist-modal-btn" class="btn-gradient text-white font-bold py-2 px-6 rounded-full transform hover:scale-105 transition-all duration-300">
+                Got it
+            </button>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="contact-modal" class="modal fixed inset-0 flex items-center justify-center p-4 hidden">
+        <div class="bg-white p-8 rounded-xl shadow-2xl max-w-sm w-full border border-gray-300 text-center">
+            <h3 class="text-2xl font-bold gradient-text mb-4">Contact Us</h3>
+            <p class="text-gray-700 mb-4">For any inquiries, feel free to reach out to us at:</p>
+            <p class="text-lg font-bold text-gray-900 mb-6">neurasamu.chat67@gmail.com</p>
+            <button id="close-contact-modal-btn" class="btn-gradient text-white font-bold py-2 px-6 rounded-full transform hover:scale-105 transition-all duration-300">
+                Got it
+            </button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const downloadBtn1 = document.getElementById('download-btn');
+            const downloadBtn2 = document.getElementById('download-btn-2');
+            const wishlistModal = document.getElementById('wishlist-modal');
+            const closeWishlistModalBtn = document.getElementById('close-wishlist-modal-btn');
+
+            const contactLink = document.getElementById('contact-link');
+            const contactModal = document.getElementById('contact-modal');
+            const closeContactModalBtn = document.getElementById('close-contact-modal-btn');
+
+            const showModal = (modal) => {
+                modal.classList.remove('hidden');
+            };
+
+            const hideModal = (modal) => {
+                modal.classList.add('hidden');
+            };
+
+            downloadBtn1.addEventListener('click', () => showModal(wishlistModal));
+            downloadBtn2.addEventListener('click', () => showModal(wishlistModal));
+            closeWishlistModalBtn.addEventListener('click', () => hideModal(wishlistModal));
+
+            wishlistModal.addEventListener('click', (e) => {
+                if (e.target === wishlistModal) {
+                    hideModal(wishlistModal);
+                }
+            });
+
+            contactLink.addEventListener('click', (e) => {
+                e.preventDefault();
+                showModal(contactModal);
+            });
+            closeContactModalBtn.addEventListener('click', () => hideModal(contactModal));
+
+            contactModal.addEventListener('click', (e) => {
+                if (e.target === contactModal) {
+                    hideModal(contactModal);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
